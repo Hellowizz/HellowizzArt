@@ -1,0 +1,152 @@
+.title {
+  font-size: 8em;
+  margin: auto;
+  color: white;
+  opacity: 1;
+  font-family: steelfish outline;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 580px) {
+  .title {
+    font-size: 6em;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .title {
+    font-size: 3em;
+  }
+}
+
+
+
+/* ANIMATION */
+
+.title {
+	 animation: animate 10000ms linear infinite;
+	 text-shadow: 0 0 5px #e2eff0,
+               0 0 10px  #e2eff0,
+               0 0 15px  #e2eff0,
+               0 0 20px  #4FA9CD,
+               0 0 45px  #4FA9CD,
+               0 0 40px  #4FA9CD,
+               0 0 50px #4FA9CD,
+               0 0 60px #4FA9CD;
+}
+
+@keyframes animate {
+	0% { /* ROUGE */
+		text-shadow: 0 0 5px #EC2E31,
+               0 0 10px #EC2E31,
+               0 0 15px #EC2E31,
+               0 0 20px #EAC4C5,
+               0 0 25px #EAC4C5,
+               0 0 45px #EAC4C5,
+               0 0 90px #EAC4C5,
+               0 0 120px #EAC4C5;
+	}
+	10%{
+		text-shadow: 0 0 0px #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px #808080,
+               0 0 0px #808080;
+	}
+	20% { /* BLEU */
+    text-shadow: 0 0 5px #3C90F7,
+               0 0 10px #3C90F7,
+               0 0 15px #3C90F7,
+               0 0 20px #B1CEF2,
+               0 0 25px #B1CEF2,
+               0 0 45px #B1CEF2,
+               0 0 90px #B1CEF2,
+               0 0 120px #B1CEF2;
+  }
+	30%{
+		text-shadow: 0 0 0px #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px #808080,
+               0 0 0px #808080;
+	}
+  40% { /* JAUNE */
+    text-shadow: 0 0 5px #F0F046,
+               0 0 10px #F0F046,
+               0 0 15px #F0F046,
+               0 0 20px #F2F2CD,
+               0 0 25px #F2F2CD,
+               0 0 45px #F2F2CD,
+               0 0 90px #F2F2CD,
+               0 0 120px #F2F2CD;
+  }
+  50%{
+    text-shadow: 0 0 0px #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px #808080,
+               0 0 0px #808080;
+  }
+  60% { /* VIOLET */
+    text-shadow: 0 0 5px #D244FF,
+               0 0 10px #D244FF,
+               0 0 15px #D244FF,
+               0 0 20px #FFB0F3,
+               0 0 25px #FFB0F3,
+               0 0 45px #FFB0F3,
+               0 0 90px #FFB0F3,
+               0 0 120px #FFB0F3;
+  }
+  70%{
+    text-shadow: 0 0 0px #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px #808080,
+               0 0 0px #808080;
+  }
+  80% { /* VERT */
+    text-shadow: 0 0 5px #4AFF75,
+               0 0 10px #4AFF75,
+               0 0 15px #4AFF75,
+               0 0 20px #AAFDF3,
+               0 0 25px #AAFDF3,
+               0 0 45px #AAFDF3,
+               0 0 90px #AAFDF3,
+               0 0 120px #AAFDF3;
+  }
+  90%{
+    text-shadow: 0 0 0px #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #e2eff0,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px  #808080,
+               0 0 0px #808080,
+               0 0 0px #808080;
+  }
+    100%{ /* ROUGE */
+        text-shadow: 0 0 5px #EC2E31,
+               0 0 10px #EC2E31,
+               0 0 15px #EC2E31,
+               0 0 20px #EAC4C5,
+               0 0 25px #EAC4C5,
+               0 0 45px #EAC4C5,
+               0 0 90px #EAC4C5,
+               0 0 120px #EAC4C5;
+    }
+  to {
+    
+  }
+}
