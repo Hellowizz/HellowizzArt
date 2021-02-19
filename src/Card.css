@@ -16,6 +16,14 @@
 	width: 20%;
 }
 
+.shop-button {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 580px) {
   	.card-follow {
 		width: 50%;

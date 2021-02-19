@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Card />
-      <div className="backwark"/>
+      <div className="backwark-container"/>
     </div>
   );
 }
