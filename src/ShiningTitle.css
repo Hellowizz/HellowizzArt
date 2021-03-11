@@ -1,9 +1,16 @@
+@font-face {
+    font-family: 'steelfishO';
+    src: url('./steelfish.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
 .title {
   font-size: 8em;
   margin: auto;
   color: white;
   opacity: 1;
-  font-family: steelfish outline;
+  font-family: steelfishO;
 }
 
 

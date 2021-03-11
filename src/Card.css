@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'gobold';
+    src: url('./goboldB.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gobold';
+    src: url('./gobold.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
 .card-container {
 	margin: auto;
 	font-family: gobold;
