@@ -42,7 +42,7 @@ function App() {
 	return (
 	    <div className="App">
 	      <Card />
-	      <BackGround tabImgs={isTablet ? tabOfImgsPhone : tabOfImgsDesktop} duration={6}/>
+	      <BackGround tabImgs={isTablet ? tabOfImgsPhone : tabOfImgsDesktop} duration={6} isTablet={isTablet}/>
 	    </div>
 	);
 }

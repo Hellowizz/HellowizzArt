@@ -57,8 +57,6 @@ const ShopButtonPhone = withStyles({
 })(Button);
 
 export default function Card () {
-	
-	const isTablet = useMediaQuery({ maxDeviceWidth: 1024});
 	const isMobile = useMediaQuery({ maxDeviceWidth: 580 });
 
 	return (
@@ -96,7 +94,7 @@ export default function Card () {
 				<a href='https://www.webtoons.com/fr/challenge/linked-haters/list?title_no=461285'><img alt="webtoon" src={Webtoon} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
 				<a href='https://www.mangadraft.com/user/hellowizz' style={{ marginLeft: '10px' }}><img alt="webtoon" src={MangaDraft} style= {{ height: isMobile ? '15px' : '30px' }}/></a>
 			</div>
-			
+
 		</div>
 	)
 }
