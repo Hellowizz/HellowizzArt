@@ -14,7 +14,7 @@ export default function DrawingSection({tabImgs, duration, isTablet}) {
       setCurrentImgId(random);
     }
 
-    if (seconds % duration === 0 && !isTablet) {
+    if (seconds % duration === 0 &&  seconds !== 0 && !isTablet) {
     	setImgIsInTransition(true);
     	setTimeAtTransition(seconds);
     }

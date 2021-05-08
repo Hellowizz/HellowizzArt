@@ -70,7 +70,7 @@ export default function Card () {
 			</div>
 
 			<div className="card-icon">
-				<a href='https://www.instagram.com/helllowizz/'><img alt="instagram" src={Instagram} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
+				<a href='https://www.instagram.com/hellowizzu/'><img alt="instagram" src={Instagram} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
 				<a href='https://twitter.com/Hellow_wizzu' style={{ marginLeft: '10px' }}><img alt="twitter" src={Twitter} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
 				<a href='https://www.youtube.com/channel/UCRhNX3kNMwxG5glSF5iAvLQ' style={{ marginLeft: '10px' }}><img alt="youtube" src={Youtube} style= {{ height: isMobile ? '19px' : '34px' }}/></a>
 				<a href='https://www.twitch.tv/hellow_wizzu' style={{ marginLeft: '10px' }}><img alt="twitch" src={Twitch} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
