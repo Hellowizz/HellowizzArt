@@ -23,7 +23,7 @@
 }
 
 .card-follow {
-	margin: 20px 0;
+	margin: 30px 0 20px 0;
 	display: inline-flex;
 	align-items: center;
 	text-overflow: none;
@@ -35,7 +35,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 10px 0;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 580px) {
@@ -69,4 +68,11 @@
 	align-items: center;
 }
 
-/* bla */
+.livre-icon {
+	margin-top: 25px;
+	filter: drop-shadow(0 0 8px  #e2eff0);
+}
+
+.livre-icon:hover {
+	filter: drop-shadow(0 0 13px  #ffffff);
+}

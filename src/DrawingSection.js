@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function DrawingSection({tabImgs, duration, isTablet}) {
   const [seconds, setSeconds] = useState(0);
-  const [currentImgId, setCurrentImgId] = useState(0);
+  const [currentImgId, setCurrentImgId] = useState(8);
   const [timeAtTransition, setTimeAtTransition] = useState(0);
   const [imgIsInTransition, setImgIsInTransition] = useState(false);
 

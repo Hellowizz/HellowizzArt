@@ -17,20 +17,23 @@ import Youtube from './img/icons/youtube.svg';
 import Twitch from './img/icons/twitch.svg';
 import Tiktok from './img/icons/tiktok.svg';
 import Toyhouse from './img/icons/toyhouse.svg';
+import Panier from './img/icons/panier.svg';
+
+import Livre from './img/icons/livre.png';
 
 /* CUSTOMISATION */
 const ShopButton = withStyles({
   root: {
     backgroundColor: 'white',
     boxShadow: '0 0 8px  #e2eff0',
-    margin: '20px 0 15px 0',
+    margin: '10px 0 5px 0',
     '&:hover': {
     	backgroundColor: 'white',
     	boxShadow: '0 0 5px #e2eff0, 0 0 10px  #e2eff0, 0 0 15px  #e2eff0, 0 0 20px  #808080, 0 0 25px  #808080, 0 0 45px  #808080;'
     }
   },
   text: {
-    padding : '15px',
+    padding : '8px 10px',
     color: '#211e2e',
     fontWeight: '600',
     fontFamily: 'gobold'
@@ -48,7 +51,7 @@ const ShopButtonPhone = withStyles({
     }
   },
   text: {
-    padding : '10px',
+    padding : '8px 10px',
     fontSize : '11px',
     color: '#211e2e',
     fontWeight: '600',
@@ -63,9 +66,19 @@ export default function Card () {
 		<div className="card-container">
 			<ShiningTitle />
 
+			
+			<div className='livre-icon'>
+				<a href='https://fr.ulule.com/linked-haters-1/'><img alt="cart" src={Livre} style= {{ height: isMobile ? '100px' : '140px' }}/></a>
+			</div>
+			
+
+			<div className="shop-button">
+				{isMobile ? <ShopButtonPhone href="https://fr.ulule.com/linked-haters-1/">Commandez le tome 1 de Linked Haters !</ShopButtonPhone> : <ShopButton href="https://fr.ulule.com/linked-haters-1/">Commandez le tome 1 de Linked Haters !</ShopButton>}
+			</div>
+
 			<div className="card-follow">
 				<div className="cut"/>
-				<div className="text-follow">Follow me on</div>
+				<div className="text-follow">Réseaux sociaux</div>
 				<div className="cut"/>
 			</div>
 
@@ -73,13 +86,9 @@ export default function Card () {
 				<a href='https://www.instagram.com/hellowizzu/'><img alt="instagram" src={Instagram} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
 				<a href='https://twitter.com/Hellow_wizzu' style={{ marginLeft: '10px' }}><img alt="twitter" src={Twitter} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
 				<a href='https://www.youtube.com/channel/UCRhNX3kNMwxG5glSF5iAvLQ' style={{ marginLeft: '10px' }}><img alt="youtube" src={Youtube} style= {{ height: isMobile ? '19px' : '34px' }}/></a>
-				<a href='https://www.twitch.tv/hellow_wizzu' style={{ marginLeft: '10px' }}><img alt="twitch" src={Twitch} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
 				<a href='https://www.tiktok.com/@hellowizzu' style={{ marginLeft: '10px' }}><img alt="tiktok" src={Tiktok} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
-				<a href='https://toyhou.se/Hellowizz' style={{ marginLeft: '10px' }}><img alt="toyhouse" src={Toyhouse} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
-			</div>
-
-			<div className="shop-button">
-				{isMobile ? <ShopButtonPhone href="https://hellowizz.company.site/">Support me and buy goodies !</ShopButtonPhone> : <ShopButton href="https://hellowizz.company.site/">Support me and buy goodies !</ShopButton>}
+				<a href='https://toyhou.se/Hellowizz/characters/folder:all' style={{ marginLeft: '10px' }}><img alt="toyhouse" src={Toyhouse} style= {{ height: isMobile ? '25px' : '40px' }}/></a>
+				<a href='https://hellowizz.company.site/' style={{ marginLeft: '10px' }}><img alt="cart" src={Panier} style= {{ height: isMobile ? '25px' : '42px' }}/></a>
 			</div>
 
 			<div style={{ margin: '20px' }}/>
