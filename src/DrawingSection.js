@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function DrawingSection({tabImgs, duration, isTablet}) {
   const [seconds, setSeconds] = useState(0);
@@ -9,17 +9,12 @@ export default function DrawingSection({tabImgs, duration, isTablet}) {
   useEffect(() => {
     let interval = null;
 
-    if (seconds === 0 && isTablet) {
-      let random = Math.floor(Math.random() * tabImgs.length);
-      setCurrentImgId(random);
-    }
-
-    if (seconds % duration === 0 &&  seconds !== 0 && !isTablet) {
+    if (seconds % duration === 0 &&  seconds !== 0) {
     	setImgIsInTransition(true);
     	setTimeAtTransition(seconds);
     }
 
-    if (imgIsInTransition && seconds - timeAtTransition === 1 && !isTablet) {
+    if (imgIsInTransition && seconds - timeAtTransition === 1) {
     	setImgIsInTransition(false);
     	let random = Math.floor(Math.random() * tabImgs.length);
     	if (random === currentImgId) { random = Math.floor(Math.random() * tabImgs.length);}
